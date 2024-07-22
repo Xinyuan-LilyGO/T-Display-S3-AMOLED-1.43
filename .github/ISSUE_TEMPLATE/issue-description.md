@@ -1,5 +1,5 @@
 ---
-name: Add a title
+name: Issue Description
 about: 'null'
 title: ''
 labels: ''
