@@ -1,5 +1,5 @@
 ---
-name: Issue Description
+name: Issue Description Template
 about: 'null'
 title: ''
 labels: ''
