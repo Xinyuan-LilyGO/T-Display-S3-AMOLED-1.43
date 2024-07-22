@@ -5,16 +5,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        * Before reporting a new issue please check and search in [List of existing issues](null) 
-        * Please check [Online Documentation](null)
-        * Take a look on [Troubleshooting guide](null)
+        * Before reporting a new issue please check and search in [List of existing issues](https://github.com/Xinyuan-LilyGO/T-Circle-S3-AMOLED-1.43?tab=readme-ov-file#faq) 
         * If still experiencing the issue, please provide as many details as possible below about your hardware, computer setup and code.
   - type: input
-    id: Board
+    id: IDE and version or firmware
     attributes:
-      label: Board
-      description: On which Board does this issue occur?
-      placeholder: eg. ESP32 Dev Module, ESP32-S2, LilyGo TTGO LoRa32...
+      label: IDE and version or firmware
+      description: The IDE and version you used for compiling the program or the firmware file name you directly used
+      placeholder: For example: [Arduino][arduino-esp32-libs_v3.0.1],[PlatformIO][platform = espressif32 @~6.5.0 framework = arduino]...
     validations:
       required: true
   - type: textarea
