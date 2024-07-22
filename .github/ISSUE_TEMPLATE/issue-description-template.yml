@@ -12,7 +12,7 @@ body:
     attributes:
       label: IDE and version or firmware
       description: The IDE and version you used for compiling the program or the firmware file name you directly used
-      placeholder: For example. [Arduino] arduino-esp32-libs_v3.0.1,PlatformIO platform = espressif32 @~6.5.0 framework = arduino...
+      placeholder: For example. [Arduino][arduino-esp32-libs_v3.0.1],[PlatformIO][platform = espressif32 @~6.5.0 framework = arduino]...
     validations:
       required: true
   - type: textarea
