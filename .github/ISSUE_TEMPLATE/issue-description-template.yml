@@ -8,7 +8,7 @@ body:
         * Before reporting a new issue please check and search in [List of existing issues](https://github.com/Xinyuan-LilyGO/T-Circle-S3-AMOLED-1.43?tab=readme-ov-file#faq) 
         * If still experiencing the issue, please provide as many details as possible below about your hardware, computer setup and code.
   - type: input
-    id: IDE and version or firmware
+    id: IDE_and_version_or_firmware
     attributes:
       label: IDE and version or firmware
       description: The IDE and version you used for compiling the program or the firmware file name you directly used
