@@ -1,6 +1,6 @@
 name: Issue description template
 description: Report any problem here
-labels: ["Status: Awaiting triage"]
+labels: ["awaiting triage"]
 body:
   - type: markdown
     attributes:
