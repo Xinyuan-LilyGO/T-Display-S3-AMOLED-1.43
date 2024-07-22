@@ -1,7 +1,7 @@
 name: Issue description template
 description: Report any problem here
 labels: ["awaiting triage"]
-Assignees: Llgok
+assignees: Llgok
 body:
   - type: markdown
     attributes:
