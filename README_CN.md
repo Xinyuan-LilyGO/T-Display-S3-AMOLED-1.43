@@ -4,23 +4,23 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
  * @LastEditors: LILYGO_L
- * @LastEditTime: 2024-05-29 13:42:10
+ * @LastEditTime: 2024-07-29 16:39:59
  * @License: GPL 3.0
 -->
-<h1 align = "center">T-Circle-S3-AMOLED-1.43</h1>
+<h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
 
 ## **[English](./README.md) | 中文**
 
 ## 版本迭代:
 | Version                               | Update date                       |
 | :-------------------------------: | :-------------------------------: |
-| T-Circle-S3-AMOLED-1.43_V1.0                      | 2024-05-20                         |
+| T-Display-S3-AMOLED-1.43_V1.0                      | 2024-05-20                         |
 
 ## 购买链接
 
 | Product                     | SOC           |  FLASH  |  PSRAM   | Link                   |
 | :------------------------: | :-----------: |:-------: | :---------: | :------------------: |
-| T-Circle-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) |  [暂未售卖]()  |
+| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) |  [暂未售卖]()  |
 
 ## 目录
 - [描述](#描述)
@@ -36,7 +36,7 @@
 
 ## 描述
 
-T-Circle-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕的圆屏开发板，可连接外接电池独立供电。
+T-Display-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕的圆屏开发板，可连接外接电池独立供电。
 
 ## 预览
 
@@ -102,9 +102,9 @@ T-Circle-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕�
 
 | Firmware | Description | Picture |
 | ------  | ------  | ------ |
-| [Original Test V1.0.0](./firmware/[T-Circle-S3_AMOLED_1.43_V1.0][Original_Test]_firmware_V1.0.0.bin) | 初始版本 |  |
-| [Light Sleep V1.0.0](./firmware/[T-Circle-S3_AMOLED_1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin) | 初始版本 |  |
-| [Deep Sleep V1.0.0](./firmware/[T-Circle-S3_AMOLED_1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin) | 初始版本 |  |
+| [Original Test V1.0.0](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Original_Test]_firmware_V1.0.0.bin) | 初始版本 |  |
+| [Light Sleep V1.0.0](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin) | 初始版本 |  |
+| [Deep Sleep V1.0.0](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin) | 初始版本 |  |
 
 
 ### PlatformIO
@@ -203,8 +203,8 @@ T-Circle-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕�
 ### 功耗
 | Firmware | Program| Description | Picture |
 | ------  | ------  | ------ | ------ | 
-| `[T-Circle-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Light Sleep Wake Up` | 功耗: 1282.8uA | <p align="center" width="10%"> <img src="image/13.jpg" alt="example" width="50%"> </p> |
-| `[T-Circle-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Deep Sleep Wake Up` | 功耗: 174.2uA |<p align="center" width="10%"> <img src="image/12.jpg" alt="example" width="50%"> </p> |
+| `[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Light Sleep Wake Up` | 功耗: 1282.8uA | <p align="center" width="10%"> <img src="image/13.jpg" alt="example" width="50%"> </p> |
+| `[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Deep Sleep Wake Up` | 功耗: 174.2uA |<p align="center" width="10%"> <img src="image/12.jpg" alt="example" width="50%"> </p> |
 
 ## 常见问题
 
@@ -227,7 +227,7 @@ T-Circle-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕�
 * A. 请按住“BOOT-0”按键重新下载程序。
 
 ## 项目
-* [T-Circle-S3-AMOLED-1.43_V1.0](./project/1.T-Circle-S3-AMOLED-1.43_V1.0.pdf)
+* [T-Display-S3-AMOLED-1.43_V1.0](./project/1.T-Display-S3-AMOLED-1.43_V1.0.pdf)
 
 ## 资料
 * [PCF8563](./information/PCF8563.pdf)

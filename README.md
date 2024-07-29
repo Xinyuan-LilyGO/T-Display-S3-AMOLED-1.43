@@ -4,23 +4,23 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
  * @LastEditors: LILYGO_L
- * @LastEditTime: 2024-05-29 13:45:06
+ * @LastEditTime: 2024-07-29 16:37:40
  * @License: GPL 3.0
 -->
-<h1 align = "center">T-Circle-S3-AMOLED-1.43</h1>
+<h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
 
 ## **English | [中文](./README_CN.md)**
 
 ## Version iteration:
 | Version                              | Update date                       |
 | :-------------------------------: | :-------------------------------: |
-| T-Circle-S3-AMOLED-1.43_V1.0                      | 2024-04-08                         |
+| T-Display-S3-AMOLED-1.43_V1.0                      | 2024-04-08                         |
 
 ## PurchaseLink
 
 | Product                     | SOC           |  FLASH  |  PSRAM   | Link                   |
 | :------------------------: | :-----------: |:-------: | :---------: | :------------------: |
-| T-Circle-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) |   [Not yet sold]()  |
+| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) |   [Not yet sold]()  |
 
 ## Directory
 - [Describe](#describe)
@@ -36,7 +36,7 @@
 
 ## Describe
 
-T-Circle-S3-AMOLED-1.43 is a development board featuring a high-definition AMOLED display with a circular shape, based on the ESP32S3, designed for standalone battery connectivity.
+T-Display-S3-AMOLED-1.43 is a development board featuring a high-definition AMOLED display with a circular shape, based on the ESP32S3, designed for standalone battery connectivity.
 
 ## Preview
 
@@ -101,9 +101,9 @@ T-Circle-S3-AMOLED-1.43 is a development board featuring a high-definition AMOLE
 
 | Firmware | Description | Picture |
 | ------  | ------  | ------ |
-| [Original Test V1.0.0](./firmware/[T-Circle-S3_AMOLED_1.43_V1.0][Original_Test]_firmware_V1.0.0.bin) | Original |  |
-| [Light Sleep V1.0.0](./firmware/[T-Circle-S3_AMOLED_1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin) | Original |  |
-| [Deep Sleep V1.0.0](./firmware/[T-Circle-S3_AMOLED_1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin) | Original |  |
+| [Original Test V1.0.0](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Original_Test]_firmware_V1.0.0.bin) | Original |  |
+| [Light Sleep V1.0.0](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin) | Original |  |
+| [Deep Sleep V1.0.0](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin) | Original |  |
 
 ### PlatformIO
 1. Install[VisualStudioCode](https://code.visualstudio.com/Download),Choose installation based on your system type.
@@ -201,8 +201,8 @@ T-Circle-S3-AMOLED-1.43 is a development board featuring a high-definition AMOLE
 ### Power Dissipation
 | Firmware | Program| Description | Picture |
 | ------  | ------  | ------ | ------ | 
-| `[T-Circle-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Light Sleep Wake Up` | Power dissipation: 1282.8uA | <p align="center" width="10%"> <img src="image/13.jpg" alt="example" width="50%"> </p> |
-| `[T-Circle-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Deep Sleep Wake Up` | Power dissipation: 174.2uA |<p align="center" width="10%"> <img src="image/12.jpg" alt="example" width="50%"> </p> |
+| `[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Light Sleep Wake Up` | Power dissipation: 1282.8uA | <p align="center" width="10%"> <img src="image/13.jpg" alt="example" width="50%"> </p> |
+| `[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Deep Sleep Wake Up` | Power dissipation: 174.2uA |<p align="center" width="10%"> <img src="image/12.jpg" alt="example" width="50%"> </p> |
 
 ## FAQ
 
@@ -225,7 +225,7 @@ T-Circle-S3-AMOLED-1.43 is a development board featuring a high-definition AMOLE
 * A. Please hold down the "BOOT-0" button and try downloading the program again.
 
 ## Project
-* [T-Circle-S3-AMOLED-1.43_V1.0](./project/T-Circle-S3-AMOLED-1.43_V1.0.pdf)
+* [T-Display-S3-AMOLED-1.43_V1.0](./project/T-Display-S3-AMOLED-1.43_V1.0.pdf)
 
 ## Information
 * [FT3168](./information/FT3168.pdf)
