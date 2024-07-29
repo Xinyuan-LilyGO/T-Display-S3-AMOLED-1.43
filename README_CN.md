@@ -227,7 +227,7 @@ T-Display-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕�
 * A. 请按住“BOOT-0”按键重新下载程序。
 
 ## 项目
-* [T-Display-S3-AMOLED-1.43_V1.0](./project/1.T-Display-S3-AMOLED-1.43_V1.0.pdf)
+* [T-Display-S3-AMOLED-1.43_V1.0](./project/T-Display-S3-AMOLED-1.43_V1.0.pdf)
 
 ## 资料
 * [PCF8563](./information/PCF8563.pdf)
