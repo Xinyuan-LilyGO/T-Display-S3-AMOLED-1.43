@@ -1,10 +1,8 @@
 /*
  * @Description: Sleep
- * @version: V1.0.0
  * @Author: LILYGO_L
  * @Date: 2024-03-11 10:05:32
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-09-06 17:04:16
+ * @LastEditTime: 2024-11-20 11:26:25
  * @License: GPL 3.0
  */
 #include "Arduino.h"
