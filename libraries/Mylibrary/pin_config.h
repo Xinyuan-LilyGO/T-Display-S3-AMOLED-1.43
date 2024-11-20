@@ -1,10 +1,8 @@
 /*
  * @Description: None
- * @version: None
- * @Author: None
+ * @Author: LILYGO_L
  * @Date: 2023-06-05 13:01:59
- * @LastEditors: LILYGO_L
- * @LastEditTime: 2024-03-26 13:57:31
+ * @LastEditTime: 2024-11-20 15:06:17
  */
 #pragma once
 

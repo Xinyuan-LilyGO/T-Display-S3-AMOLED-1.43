@@ -1,10 +1,8 @@
 /*
  * @Description: 出厂测试程序
- * @version: V1.0.0
  * @Author: LILYGO_L
  * @Date: 2023-09-06 10:58:19
- * @LastEditors: LILYGO_L
- * @LastEditTime: 2024-05-29 10:45:19
+ * @LastEditTime: 2024-11-20 15:08:44
  * @License: GPL 3.0
  */
 
@@ -336,7 +334,7 @@ void GFX_Print_Touch_Info_Loop(int32_t touch_x, int32_t touch_y, int32_t fingers
     gfx->setTextColor(BLACK);
 
     gfx->setCursor(100, 50);
-    gfx->printf("ID: %#X ", (int32_t)FT3168->IIC_Read_Device_ID());
+    gfx->printf("ID: %#X ", (int32_t)FT3168->IIC_Device_ID());
 
     gfx->setCursor(100, 70);
     gfx->printf("Fingers Number:%d ", fingers_number);
@@ -618,217 +616,217 @@ void Original_Test_9()
 
 void Original_Test_Loop()
 {
-    Original_Test_1();
+    // Original_Test_1();
 
-    while (1)
-    {
-        bool temp = false;
+    // while (1)
+    // {
+    //     bool temp = false;
 
-        if (FT3168->IIC_Interrupt_Flag == true)
-        {
-            FT3168->IIC_Interrupt_Flag = false;
+    //     if (FT3168->IIC_Interrupt_Flag == true)
+    //     {
+    //         FT3168->IIC_Interrupt_Flag = false;
 
-            int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
-            int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
-            uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
+    //         int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
+    //         int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
+    //         uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
 
-            GFX_Print_Touch_Info_Loop(touch_x, touch_y, fingers_number);
+    //         GFX_Print_Touch_Info_Loop(touch_x, touch_y, fingers_number);
 
-            if (fingers_number > 0)
-            {
-                if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
-                {
-                    Original_Test_1();
-                }
-                if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
-                {
-                    temp = true;
-                }
-            }
-        }
+    //         if (fingers_number > 0)
+    //         {
+    //             if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 Original_Test_1();
+    //             }
+    //             if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 temp = true;
+    //             }
+    //         }
+    //     }
 
-        if (temp == true)
-        {
-            break;
-        }
-    }
+    //     if (temp == true)
+    //     {
+    //         break;
+    //     }
+    // }
 
-    Original_Test_2();
+    // Original_Test_2();
 
-    while (1)
-    {
-        bool temp = false;
+    // while (1)
+    // {
+    //     bool temp = false;
 
-        if (FT3168->IIC_Interrupt_Flag == true)
-        {
-            FT3168->IIC_Interrupt_Flag = false;
+    //     if (FT3168->IIC_Interrupt_Flag == true)
+    //     {
+    //         FT3168->IIC_Interrupt_Flag = false;
 
-            int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
-            int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
-            uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
+    //         int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
+    //         int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
+    //         uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
 
-            if (fingers_number > 0)
-            {
-                if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
-                {
-                    Original_Test_2();
-                }
-                if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
-                {
-                    temp = true;
-                }
-            }
-        }
+    //         if (fingers_number > 0)
+    //         {
+    //             if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 Original_Test_2();
+    //             }
+    //             if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 temp = true;
+    //             }
+    //         }
+    //     }
 
-        if (temp == true)
-        {
-            break;
-        }
-    }
+    //     if (temp == true)
+    //     {
+    //         break;
+    //     }
+    // }
 
-    Original_Test_3();
+    // Original_Test_3();
 
-    while (1)
-    {
-        bool temp = false;
+    // while (1)
+    // {
+    //     bool temp = false;
 
-        if (FT3168->IIC_Interrupt_Flag == true)
-        {
-            FT3168->IIC_Interrupt_Flag = false;
+    //     if (FT3168->IIC_Interrupt_Flag == true)
+    //     {
+    //         FT3168->IIC_Interrupt_Flag = false;
 
-            int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
-            int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
-            uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
+    //         int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
+    //         int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
+    //         uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
 
-            if (fingers_number > 0)
-            {
-                if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
-                {
-                    Original_Test_3();
-                }
-                if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
-                {
-                    temp = true;
-                }
-            }
-        }
+    //         if (fingers_number > 0)
+    //         {
+    //             if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 Original_Test_3();
+    //             }
+    //             if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 temp = true;
+    //             }
+    //         }
+    //     }
 
-        if (temp == true)
-        {
-            break;
-        }
-    }
+    //     if (temp == true)
+    //     {
+    //         break;
+    //     }
+    // }
 
-    Original_Test_4();
+    // Original_Test_4();
 
-    while (1)
-    {
-        bool temp = false;
+    // while (1)
+    // {
+    //     bool temp = false;
 
-        if (FT3168->IIC_Interrupt_Flag == true)
-        {
-            FT3168->IIC_Interrupt_Flag = false;
+    //     if (FT3168->IIC_Interrupt_Flag == true)
+    //     {
+    //         FT3168->IIC_Interrupt_Flag = false;
 
-            int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
-            int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
-            uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
+    //         int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
+    //         int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
+    //         uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
 
-            if (fingers_number > 0)
-            {
-                if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
-                {
-                    Original_Test_4();
-                }
-                if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
-                {
-                    temp = true;
-                }
-            }
-        }
+    //         if (fingers_number > 0)
+    //         {
+    //             if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 Original_Test_4();
+    //             }
+    //             if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 temp = true;
+    //             }
+    //         }
+    //     }
 
-        if (temp == true)
-        {
-            break;
-        }
-    }
+    //     if (temp == true)
+    //     {
+    //         break;
+    //     }
+    // }
 
-    Original_Test_5();
+    // Original_Test_5();
 
-    while (1)
-    {
-        bool temp = false;
+    // while (1)
+    // {
+    //     bool temp = false;
 
-        if (FT3168->IIC_Interrupt_Flag == true)
-        {
-            FT3168->IIC_Interrupt_Flag = false;
+    //     if (FT3168->IIC_Interrupt_Flag == true)
+    //     {
+    //         FT3168->IIC_Interrupt_Flag = false;
 
-            int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
-            int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
-            uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
+    //         int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
+    //         int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
+    //         uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
 
-            if (fingers_number > 0)
-            {
-                if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
-                {
-                    Original_Test_5();
-                }
-                if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
-                {
-                    temp = true;
-                }
-                if (touch_x > 150 && touch_x < 316 && touch_y > 150 && touch_y < 210)
-                {
-                    OTG_Mode = !OTG_Mode;
-                    GFX_Print_OTG_Switch_Info(OTG_Mode);
-                    delay(300);
-                }
-            }
-        }
+    //         if (fingers_number > 0)
+    //         {
+    //             if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 Original_Test_5();
+    //             }
+    //             if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 temp = true;
+    //             }
+    //             if (touch_x > 150 && touch_x < 316 && touch_y > 150 && touch_y < 210)
+    //             {
+    //                 OTG_Mode = !OTG_Mode;
+    //                 GFX_Print_OTG_Switch_Info(OTG_Mode);
+    //                 delay(300);
+    //             }
+    //         }
+    //     }
 
-        if (temp == true)
-        {
-            break;
-        }
-    }
+    //     if (temp == true)
+    //     {
+    //         break;
+    //     }
+    // }
 
-    Original_Test_6();
+    // Original_Test_6();
 
-    while (1)
-    {
-        bool temp = false;
+    // while (1)
+    // {
+    //     bool temp = false;
 
-        if (millis() > CycleTime)
-        {
-            GFX_Print_Battery_Info_Loop();
-            CycleTime = millis() + 1000;
-        }
+    //     if (millis() > CycleTime)
+    //     {
+    //         GFX_Print_Battery_Info_Loop();
+    //         CycleTime = millis() + 1000;
+    //     }
 
-        if (FT3168->IIC_Interrupt_Flag == true)
-        {
-            FT3168->IIC_Interrupt_Flag = false;
+    //     if (FT3168->IIC_Interrupt_Flag == true)
+    //     {
+    //         FT3168->IIC_Interrupt_Flag = false;
 
-            int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
-            int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
-            uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
+    //         int32_t touch_x = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_X);
+    //         int32_t touch_y = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_COORDINATE_Y);
+    //         uint8_t fingers_number = FT3168->IIC_Read_Device_Value(FT3168->Arduino_IIC_Touch::Value_Information::TOUCH_FINGER_NUMBER);
 
-            if (fingers_number > 0)
-            {
-                if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
-                {
-                    Original_Test_6();
-                }
-                if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
-                {
-                    temp = true;
-                }
-            }
-        }
+    //         if (fingers_number > 0)
+    //         {
+    //             if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 Original_Test_6();
+    //             }
+    //             if (touch_x > 243 && touch_x < 386 && touch_y > 300 && touch_y < 360)
+    //             {
+    //                 temp = true;
+    //             }
+    //         }
+    //     }
 
-        if (temp == true)
-        {
-            break;
-        }
-    }
+    //     if (temp == true)
+    //     {
+    //         break;
+    //     }
+    // }
 
     Original_Test_7();
 
@@ -866,22 +864,22 @@ void Original_Test_Loop()
                     PCF8563->IIC_Write_Device_State(PCF8563->Arduino_IIC_RTC::Device::RTC_CLOCK_RTC,
                                                     PCF8563->Arduino_IIC_RTC::Device_State::RTC_DEVICE_OFF);
                     // 时钟传感器设置秒
-                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_SECONDS_DATA,
+                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_SECOND_DATA,
                                                     58);
                     // 时钟传感器设置分
-                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_MINUTES_DATA,
+                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_MINUTE_DATA,
                                                     59);
                     // 时钟传感器设置时
-                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_HOURS_DATA,
+                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_HOUR_DATA,
                                                     23);
                     // 时钟传感器设置天
-                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_DAYS_DATA,
+                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_DAY_DATA,
                                                     31);
                     // 时钟传感器设置月
-                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_MONTHS_DATA,
+                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_MONTH_DATA,
                                                     12);
                     // 时钟传感器设置
-                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_YEARS_DATA,
+                    PCF8563->IIC_Write_Device_Value(PCF8563->Arduino_IIC_RTC::Device_Value::RTC_SET_YEAR_DATA,
                                                     99);
                     // 开启RTC
                     PCF8563->IIC_Write_Device_State(PCF8563->Arduino_IIC_RTC::Device::RTC_CLOCK_RTC,
@@ -1046,8 +1044,8 @@ void setup()
     }
 
     // 关闭时钟输出
-    PCF8563->IIC_Write_Device_State(PCF8563->Arduino_IIC_RTC::Device::RTC_CLOCK_OUTPUT,
-                                    PCF8563->Arduino_IIC_RTC::Device_State::RTC_DEVICE_OFF);
+    PCF8563->IIC_Write_Device_State(PCF8563->Arduino_IIC_RTC::Device::RTC_CLOCK_RTC,
+                                    PCF8563->Arduino_IIC_RTC::Device_Mode::RTC_CLOCK_OUTPUT_OFF);
 
     gfx->begin();
     gfx->fillScreen(WHITE);
