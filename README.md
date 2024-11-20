@@ -4,7 +4,7 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-11-20 11:22:03
+ * @LastEditTime: 2024-11-20 11:23:12
  * @License: GPL 3.0
 -->
 <h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
@@ -24,7 +24,7 @@
 
 | Product                     | SOC           |  FLASH  |  PSRAM   | Link                   |
 | :------------------------: | :-----------: |:-------: | :---------: | :------------------: |
-| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) |   [Not yet sold]()  |
+| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) | [LILYGO Mall](https://lilygo.cc/products/t-display-s3-amoled-1-64?_pos=8&_sid=eacfa858d&_ss=r)  |
 
 ## Directory
 - [Describe](#describe)

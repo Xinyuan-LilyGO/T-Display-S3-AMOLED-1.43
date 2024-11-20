@@ -22,7 +22,7 @@
 
 | Product                     | SOC           |  FLASH  |  PSRAM   | Link                   |
 | :------------------------: | :-----------: |:-------: | :---------: | :------------------: |
-| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) |  [暂未售卖]()  |
+| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) | [LILYGO Mall](https://lilygo.cc/products/t-display-s3-amoled-1-64?_pos=8&_sid=eacfa858d&_ss=r) |
 
 ## 目录
 - [描述](#描述)
