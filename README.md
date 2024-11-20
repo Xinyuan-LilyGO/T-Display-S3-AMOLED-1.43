@@ -3,11 +3,15 @@
  * @version: V1.0.0
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
- * @LastEditors: LILYGO_L
- * @LastEditTime: 2024-07-29 16:37:40
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-11-20 11:22:03
  * @License: GPL 3.0
 -->
 <h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
+
+<p align="center" width="100%">
+    <img src="image/14.jpg" alt="">
+</p>
 
 ## **English | [中文](./README_CN.md)**
 
@@ -40,9 +44,11 @@ T-Display-S3-AMOLED-1.43 is a development board featuring a high-definition AMOL
 
 ## Preview
 
-### PCB board
+### Actual Product Image
 
-### Rendering
+<p align="center" width="100%">
+    <img src="image/14.jpg" alt="">
+</p>
 
 ## Module
 
@@ -140,6 +146,7 @@ T-Display-S3-AMOLED-1.43 is a development board featuring a high-definition AMOL
 | Flash Mode                         | QIO 80MHz                         |
 | Flash Size                           | 16MB (128Mb)                    |
 | Core Debug Level                | None                                 |
+| Partition Scheme                | 16M Flash (3MB APP/9.9MB FATFS) |
 | PSRAM                                | OPI PSRAM                         |
 | Arduino Runs On                  | Core 1                               |
 | Events Run On                     | Core 1                               |           
@@ -237,5 +244,9 @@ T-Display-S3-AMOLED-1.43 is a development board featuring a high-definition AMOL
 
 ## DependentLibraries
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
-* [Arduino_DriveBus-1.1.8](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.12](https://github.com/Xk-w/Arduino_DriveBus)
+* [JPEGDEC-1.2.8](https://github.com/bitbank2/JPEGDEC)
+* [lvgl-8.3.5](https://lvgl.io)
+* [MiniTV](https://github.com/moononournation/MiniTV)
+* [SensorLib](https://github.com/lewisxhe/SensorsLib)
 
