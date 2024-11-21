@@ -2,7 +2,7 @@
  * @Description: 出厂测试程序
  * @Author: LILYGO_L
  * @Date: 2023-09-06 10:58:19
- * @LastEditTime: 2024-11-21 17:41:41
+ * @LastEditTime: 2024-11-20 11:26:44
  * @License: GPL 3.0
  */
 
@@ -478,7 +478,7 @@ void Original_Test_2()
     GFX_Print_TEST("2.LCD Edge Detection Test");
 
     gfx->fillScreen(WHITE);
-    gfx->drawRect(2, 2, LCD_WIDTH - 4, LCD_HEIGHT - 4, RED);
+    gfx->drawRect(1, 1, LCD_WIDTH - 2, LCD_HEIGHT - 2, RED);
 
     GFX_Print_FINISH();
 
@@ -626,16 +626,20 @@ void Original_Test_Loop()
 
         if (IIC_Interrupt_Flag == true)
         {
+
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            GFX_Print_Touch_Info_Loop(touch_x, touch_y, fingers_number);
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
-                GFX_Print_Touch_Info_Loop(touch_x, touch_y, 1);
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_1();
@@ -666,12 +670,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_2();
@@ -702,12 +709,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_3();
@@ -738,13 +748,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_4();
@@ -775,12 +787,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_5();
@@ -823,12 +838,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_6();
@@ -865,12 +883,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_7();
@@ -936,12 +957,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_8();
@@ -972,12 +996,15 @@ void Original_Test_Loop()
         {
             int16_t temp_touch_x[5];
             int16_t temp_touch_y[5];
+            uint8_t fingers_number = 1;
 
-            if (CST9217.getPoint(temp_touch_x, temp_touch_y, 1) > 0)
+            CST9217.getPoint(temp_touch_x, temp_touch_y, 1);
+
+            int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
+            int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
+
+            if (fingers_number > 0)
             {
-                int32_t touch_x = LCD_WIDTH - temp_touch_x[0];
-                int32_t touch_y = LCD_HEIGHT - temp_touch_y[0];
-
                 if (touch_x > 80 && touch_x < 223 && touch_y > 300 && touch_y < 360)
                 {
                     Original_Test_9();
