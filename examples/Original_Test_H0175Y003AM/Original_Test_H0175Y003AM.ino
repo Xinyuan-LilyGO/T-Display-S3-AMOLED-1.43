@@ -2,7 +2,7 @@
  * @Description: 出厂测试程序
  * @Author: LILYGO_L
  * @Date: 2023-09-06 10:58:19
- * @LastEditTime: 2024-11-25 10:38:33
+ * @LastEditTime: 2024-11-25 16:52:30
  * @License: GPL 3.0
  */
 
@@ -1005,7 +1005,7 @@ void setup()
     Serial.println("Ciallo");
 
     pinMode(LCD_EN, OUTPUT);
-    digitalWrite(LCD_EN, HIGH);
+    digitalWrite(LCD_EN, LOW); // 关闭屏幕电源
 
     if (SY6970->begin() == false)
     {
@@ -1052,6 +1052,9 @@ void setup()
     attachInterrupt(TP_INT, []()
                     { IIC_Interrupt_Flag = true; }, FALLING);
 
+    // Set to skip register check, used when the touch device address conflicts with other I2C device addresses [0x5A]
+    CST9217.jumpCheck();
+
     CST9217.setPins(-1, TP_INT);
     if (CST9217.begin(Wire, 0x5A, IIC_SDA, IIC_SCL) == false)
     {
@@ -1076,6 +1079,8 @@ void setup()
     // 关闭时钟输出
     PCF8563->IIC_Write_Device_State(PCF8563->Arduino_IIC_RTC::Device::RTC_CLOCK_OUTPUT_VALUE,
                                     PCF8563->Arduino_IIC_RTC::Device_Mode::RTC_CLOCK_OUTPUT_OFF);
+
+    digitalWrite(LCD_EN, HIGH); // 打开屏幕电源
 
     gfx->begin();
     gfx->fillScreen(WHITE);
