@@ -4,7 +4,7 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-11-20 11:44:03
+ * @LastEditTime: 2024-11-25 11:07:30
  * @License: GPL 3.0
 -->
 <h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
@@ -16,9 +16,10 @@
 ## **English | [中文](./README_CN.md)**
 
 ## Version iteration:
-| Version                              | Update date                       |
-| :-------------------------------: | :-------------------------------: |
-| T-Display-S3-AMOLED-1.43_V1.0                      | 2024-04-08                         |
+| Version                              | Update date                       |Update description|
+| :-------------------------------: | :-------------------------------: | :-------------------------------: |
+| T-Display-S3-AMOLED-1.43_V1.0     | 2024-05-20      |Original version      |
+| T-Display-S3-AMOLED-1.43_V1.0     | 2024-11-25       |   Additional wiring harness, additional H0175Y003AM screen compatibility   |
 
 ## PurchaseLink
 

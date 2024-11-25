@@ -2,7 +2,7 @@
  * @Description: None
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
- * @LastEditTime: 2024-11-20 11:44:16
+ * @LastEditTime: 2024-11-25 11:05:51
  * @License: GPL 3.0
 -->
 <h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
@@ -14,9 +14,10 @@
 ## **[English](./README.md) | 中文**
 
 ## 版本迭代:
-| Version                               | Update date                       |
-| :-------------------------------: | :-------------------------------: |
-| T-Display-S3-AMOLED-1.43_V1.0                      | 2024-05-20                         |
+| Version         | Update date     |Update description|
+| :-------------------------------: | :-------------------------------: | :-------------------------------: |
+| T-Display-S3-AMOLED-1.43_V1.0     | 2024-05-20       |初始版本      |
+| T-Display-S3-AMOLED-1.43_V1.0     | 2024-11-25       |新增排线、新增H0175Y003AM屏幕适配      |
 
 ## 购买链接
 
