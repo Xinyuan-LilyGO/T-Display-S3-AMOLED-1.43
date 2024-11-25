@@ -2,9 +2,13 @@
  * @Description: None
  * @Author: LILYGO_L
  * @Date: 2023-06-05 13:01:59
- * @LastEditTime: 2024-11-20 15:06:17
+ * @LastEditTime: 2024-11-25 11:01:33
  */
 #pragma once
+
+//这里选择你使用的屏幕
+// #define DO0143FAT01 //1.43 inches
+#define H0175Y003AM //1.75 inches
 
 #define LCD_SDIO0 11
 #define LCD_SDIO1 13
