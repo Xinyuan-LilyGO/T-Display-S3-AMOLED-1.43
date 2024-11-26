@@ -10,13 +10,17 @@
 #include <SD.h>
 #include "pin_config.h"
 
-#define MJPEG_FILENAME "/240x240px_60fps.mjpeg"
-#define FPS 60
-#define MJPEG_BUFFER_SIZE (240 * 240 * 2 / 10)
+// #define MJPEG_FILENAME "/240x240px_60fps.mjpeg"
+// #define FPS 60
+// #define MJPEG_BUFFER_SIZE (240 * 240 * 2 / 10)
 
 // #define MJPEG_FILENAME "/466x466px_60fps.mjpeg"
 // #define FPS 60
 // #define MJPEG_BUFFER_SIZE (466 * 466 * 2 / 10)
+
+#define MJPEG_FILENAME "/466x466px_60fps_2.mjpeg"
+#define FPS 60
+#define MJPEG_BUFFER_SIZE (466 * 466 * 2 / 10)
 
 #define CHART_MARGIN 64
 #define LEGEND_A_COLOR 0x1BB6
@@ -43,7 +47,14 @@ static int total_frames = 0;
 Arduino_DataBus *bus = new Arduino_ESP32QSPI(
     LCD_CS /* CS */, LCD_SCLK /* SCK */, LCD_SDIO0 /* SDIO0 */, LCD_SDIO1 /* SDIO1 */, LCD_SDIO2 /* SDIO2 */, LCD_SDIO3 /* SDIO3 */);
 
-Arduino_GFX *gfx = new Arduino_SH8601(bus, LCD_RST /* RST */, 0 /* rotation */, false /* IPS */, LCD_WIDTH, LCD_HEIGHT);
+// DO0143FAT01
+// Arduino_GFX *gfx = new Arduino_SH8601(bus, LCD_RST /* RST */,
+//                                       0 /* rotation */, false /* IPS */, LCD_WIDTH, LCD_HEIGHT);
+
+// H0175Y003AM
+Arduino_GFX *gfx = new Arduino_CO5300(bus, LCD_RST /* RST */,
+                                      0 /* rotation */, false /* IPS */, LCD_WIDTH, LCD_HEIGHT,
+                                      6 /* col offset 1 */, 0 /* row offset 1 */, 0 /* col_offset2 */, 0 /* row_offset2 */);
 
 SPIClass SPI_2(HSPI);
 
@@ -127,7 +138,7 @@ void setup()
     pinMode(LCD_EN, OUTPUT);
     digitalWrite(LCD_EN, HIGH);
 
-    gfx->begin();
+    gfx->begin(80000000);
     gfx->fillScreen(BLACK);
     gfx->setTextColor(WHITE);
     gfx->setCursor(0, LCD_WIDTH / 2);

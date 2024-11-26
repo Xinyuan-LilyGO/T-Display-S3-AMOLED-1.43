@@ -4,7 +4,7 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-06 10:58:19
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-09-06 16:50:02
+ * @LastEditTime: 2024-11-26 16:23:03
  * @License: GPL 3.0
  */
 #include <Arduino.h>
@@ -141,6 +141,9 @@ void setup()
 
     attachInterrupt(TP_INT, []()
                     { IIC_Interrupt_Flag = true; }, FALLING);
+
+    // Set to skip register check, used when the touch device address conflicts with other I2C device addresses [0x5A]
+    CST9217.jumpCheck();
 
     CST9217.setPins(-1, TP_INT);
     if (CST9217.begin(Wire, 0x5A, IIC_SDA, IIC_SCL) == false)
