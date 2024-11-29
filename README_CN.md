@@ -2,10 +2,10 @@
  * @Description: None
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
- * @LastEditTime: 2024-11-25 11:05:51
+ * @LastEditTime: 2024-11-29 12:10:55
  * @License: GPL 3.0
 -->
-<h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
+<h1 align = "center">T-Display-AMOLED-1.43-1.75</h1>
 
 <p align="center" width="100%">
     <img src="image/14.jpg" alt="">
@@ -39,7 +39,7 @@
 
 ## 描述
 
-T-Display-S3-AMOLED-1.43是一款基于ESP32S3开发的板载高清AMOLED屏幕的圆屏开发板，可连接外接电池独立供电。
+T-Display-AMOLED-1.43-1.75是一款基于ESP32S3开发的板载高清AMOLED屏幕的圆屏开发板，可连接外接电池独立供电。
 
 ## 预览
 

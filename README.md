@@ -4,10 +4,10 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-11-25 11:07:30
+ * @LastEditTime: 2024-11-29 12:11:59
  * @License: GPL 3.0
 -->
-<h1 align = "center">T-Display-S3-AMOLED-1.43</h1>
+<h1 align = "center">T-Display-AMOLED-1.43-1.75</h1>
 
 <p align="center" width="100%">
     <img src="image/14.jpg" alt="">
@@ -41,7 +41,7 @@
 
 ## Describe
 
-T-Display-S3-AMOLED-1.43 is a development board featuring a high-definition AMOLED display with a circular shape, based on the ESP32S3, designed for standalone battery connectivity.
+T-Display-AMOLED-1.43-1.75 is a development board featuring a high-definition AMOLED display with a circular shape, based on the ESP32S3, designed for standalone battery connectivity.
 
 ## Preview
 
