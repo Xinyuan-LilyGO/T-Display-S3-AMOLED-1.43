@@ -4,10 +4,10 @@
  * @Author: LILYGO_L
  * @Date: 2023-09-11 16:13:14
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-11-29 12:11:59
+ * @LastEditTime: 2024-11-29 13:38:38
  * @License: GPL 3.0
 -->
-<h1 align = "center">T-Display-AMOLED-1.43-1.75</h1>
+<h1 align = "center">T-Display-S3-AMOLED-1.43-1.75</h1>
 
 <p align="center" width="100%">
     <img src="image/14.jpg" alt="">
@@ -19,13 +19,13 @@
 | Version                              | Update date                       |Update description|
 | :-------------------------------: | :-------------------------------: | :-------------------------------: |
 | T-Display-S3-AMOLED-1.43_V1.0     | 2024-05-20      |Original version      |
-| T-Display-S3-AMOLED-1.43_V1.0     | 2024-11-25       |   Additional wiring harness, additional H0175Y003AM screen compatibility   |
+| T-Display-S3-AMOLED-1.43-1.75_V1.0     | 2024-11-25       |   Additional wiring harness, additional H0175Y003AM screen compatibility   |
 
 ## PurchaseLink
 
 | Product                     | SOC           |  FLASH  |  PSRAM   | Link                   |
 | :------------------------: | :-----------: |:-------: | :---------: | :------------------: |
-| T-Display-S3-AMOLED-1.43_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) | [LILYGO Mall](https://lilygo.cc/products/t-display-s3-amoled-1-64?_pos=8&_sid=eacfa858d&_ss=r)  |
+| T-Display-S3-AMOLED-1.43-1.75_V1.0   | ESP32S3R8 |   16M   | 8M (Octal SPI) | [LILYGO Mall](https://lilygo.cc/products/t-display-s3-amoled-1-64?_pos=8&_sid=eacfa858d&_ss=r)  |
 
 ## Directory
 - [Describe](#describe)
@@ -41,7 +41,7 @@
 
 ## Describe
 
-T-Display-AMOLED-1.43-1.75 is a development board featuring a high-definition AMOLED display with a circular shape, based on the ESP32S3, designed for standalone battery connectivity.
+T-Display-S3-AMOLED-1.43-1.75 is a development board featuring a high-definition AMOLED display with a circular shape, based on the ESP32S3, designed for standalone battery connectivity.
 
 ## Preview
 
@@ -114,7 +114,7 @@ T-Display-AMOLED-1.43-1.75 is a development board featuring a high-definition AM
 | [Original_Test](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Original_Test]_firmware_V1.0.0.bin) | Original |  |
 | [Light_Sleep](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin) | Original |  |
 | [Deep_Sleep](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin) | Original |  |
-| [Original_Test_H0175Y003AM](./firmware/[T-Display-S3-AMOLED-1.43_V1.0][Original_Test_H0175Y003AM]_firmware_V1.0.0.bin) | Original |  |
+| [Original_Test_H0175Y003AM](./firmware/[T-Display-S3-AMOLED-1.75_V1.0][Original_Test_H0175Y003AM]_firmware_V1.0.2.bin) | Original |  |
 
 ### PlatformIO
 1. Install[VisualStudioCode](https://code.visualstudio.com/Download),Choose installation based on your system type.
